@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telaCreditos"
+    tools:context=".telaQuiz"
     android:background="@drawable/background">
 
     <ImageView
@@ -28,125 +28,130 @@
         app:srcCompat="@drawable/essjlogobranca" />
 
     <ImageView
-        android:id="@+id/devs"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/regular"
+        android:text="0 / 10"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lamp"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="112dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/devs" />
+        app:srcCompat="@drawable/lamp" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/regular"
-        android:text="Equipe Desenvolvedora"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bold"
+        android:text="Qual o nome de Dom Bosco?"
         android:textColor="@color/gray"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/devs" />
+        app:layout_constraintTop_toBottomOf="@+id/lamp" />
 
     <Button
 
-        android:id="@+id/btnDev1"
+        android:id="@+id/btnResp1"
         android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/regular"
-        android:text="Brayan Roberto"
+        android:text="Dom Bosco"
         android:textAllCaps="false"
         android:textColor="@color/gray"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
 
         />
 
     <Button
 
-        android:id="@+id/btnDev2"
+        android:id="@+id/btnResp2"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/regular"
-        android:text="Caio Cichetti"
+        android:text="Giovanni Melchior Bosco"
         android:textAllCaps="false"
         android:textColor="@color/gray"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDev1"
+        app:layout_constraintTop_toBottomOf="@+id/btnResp1"
 
         />
 
     <Button
 
-        android:id="@+id/btnDev3"
+        android:id="@+id/btnResp3"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/regular"
-        android:text="Guilherme Drumond"
+        android:text="Jhon Bosco"
         android:textAllCaps="false"
         android:textColor="@color/gray"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDev2"
+        app:layout_constraintTop_toBottomOf="@+id/btnResp2"
 
         />
 
     <Button
 
-        android:id="@+id/btnDev4"
+        android:id="@+id/btnResp4"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/regular"
-        android:text="Matheus Germano"
+        android:text="Guilherme Melchior Bosco"
         android:textAllCaps="false"
         android:textColor="@color/gray"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDev3"
-
-        />
-
-    <Button
-
-        android:id="@+id/btnDev5"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button2"
-        android:fontFamily="@font/regular"
-        android:text="Thales Gabriel"
-        android:textAllCaps="false"
-        android:textColor="@color/gray"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDev4"
+        app:layout_constraintTop_toBottomOf="@+id/btnResp3"
 
         />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
