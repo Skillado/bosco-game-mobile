@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.domboscoquizmobile.models.API;
+
+import java.util.concurrent.ExecutionException;
 
 public class telaTema extends AppCompatActivity {
 
@@ -25,11 +30,24 @@ public class telaTema extends AppCompatActivity {
         Button btnNossaSenhora = (Button)findViewById(R.id.btnNossaSenhora);
         Button btnEssj = (Button)findViewById(R.id.btnEssj);
 
+        HTTPsSERVICE service = new HTTPsSERVICE("5");
+        try {
+                API retorno = service.execute().get();
+
+            btnDomBosco.setText(retorno.toString());
+        }catch (InterruptedException e){
+                e.printStackTrace();
+        }catch (ExecutionException e){
+            e.printStackTrace();
+        }
+
+
         btnDomBosco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(telaTema.this, telaQuiz.class);
                 startActivity(intent);
+
             }
         });
 
